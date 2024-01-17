@@ -3,6 +3,7 @@ import pandas
 import requests
 import snowflake.connector
 from urllib.error import URLError
+import error
 
 streamlit.title("My Mom's New Healthy Diner")
 
@@ -35,3 +36,4 @@ try:
         
 except URLError as e:
     streamlit.error()
+
